@@ -137,6 +137,7 @@ urlpatterns = patterns('',
     url(r'^layers/resolve_user', resolve_user_mapstory, name='resolve_user_mapstory'),
 
     url(r'^robots\.txt$', TemplateView.as_view(template_name='robots.txt', content_type="text/plain"), name='robots'),
+    url(r'^style$', TemplateView.as_view(template_name="styleIndex.html")),
 
 ) + geonode_layers_urlpatterns + layer_detail_patterns + urlpatterns
 
