@@ -173,15 +173,13 @@
             </a>
         </div>
         <div layout="column" class="sponsor-logos"  layout-align="center center" flex-gt-xs="50" flex-order-gt-xs="-1">
+            {% for sponsor in sponsors %}
             <div>
-                <img src="{{ STATIC_URL }}mapstory/img/sponsor_dcpl.png"  />
+                <a href="{{ sponsor.link }}">
+                    <img src="{{ sponsor.url }}" alt="{{ sponsor.name }} - {{ sponsor.description }}">
+                </a>
             </div>
-            <div>
-                <img src="{{ STATIC_URL }}mapstory/img/sponsor_spatial.png" />
-            </div>
-            <div>
-                <img src="{{ STATIC_URL }}mapstory/img/sponsor_sunlight.png" />
-            </div>
+            {% endfor %}
         </div>
     </section>
 </div>
