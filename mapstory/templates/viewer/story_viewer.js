@@ -49,7 +49,7 @@
                         StoryMap, stStoryMapBuilder, stStoryMapBaseBuilder,
                         StoryPinLayerManager, StoryBoxLayerManager,
                         mediaService) {
-        this.storyMap = new StoryMap({target: 'map', returnToExtent: true});
+        this.storyMap = new StoryMap({target: 'map'});
         var _config = {};
         this.title = "";
         this.owner = "";
